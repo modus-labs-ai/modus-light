@@ -1,0 +1,25 @@
+# The sdist is what air-gapped mirrors and distro packagers build from, and this
+# product is sold on verifiability — so the verification gate has to be in the box.
+# Without these rules `make verify` is impossible from an sdist: setuptools ships
+# only the package under src/ plus the files it needs to build.
+include LICENSE
+include README.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include SECURITY.md
+include Makefile
+include setup.cfg
+include pyproject.toml
+
+recursive-include src/modus_light py.typed
+recursive-include tests *.py
+recursive-include examples *.py
+recursive-include docs *.md
+
+# Assets are referenced by the README; keep the sdist self-contained.
+recursive-include assets *.jpeg *.jpg *.png *.svg
+
+# Never ship build or environment noise.
+global-exclude *.py[cod] __pycache__/* .DS_Store
+prune .github

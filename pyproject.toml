@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modus-light"
+version = "1.0.0"
+description = "Sovereign Enterprise Agent Runtime (Community Edition) with zero-token state, Google Zanzibar ReBAC, and algorithmic FinOps kill switches."
+readme = "README.md"
+license = "BUSL-1.1"
+requires-python = ">=3.10"
+authors = [
+    { name = "Modus Labs & Sovereign Systems" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "flake8>=6.0",
+]
+
+[project.scripts]
+modus-light = "modus_light.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/modus-labs-ai/modus-light"
+Documentation = "https://github.com/modus-labs-ai/modus-light/tree/main/docs"
+Repository = "https://github.com/modus-labs-ai/modus-light"
+Issues = "https://github.com/modus-labs-ai/modus-light/issues"
+Changelog = "https://github.com/modus-labs-ai/modus-light/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# PEP 561. Every module here is annotated, but without this marker in the installed
+# wheel a consumer running mypy or pyright strict gets "missing library stubs or
+# py.typed marker" and has to blanket-ignore the import — the annotations we ship
+# would be invisible to exactly the customers most likely to care about them.
+[tool.setuptools.package-data]
+modus_light = ["py.typed"]

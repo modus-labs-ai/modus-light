@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&amp;family=Open+Sans:wght@400;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap');
+      .title { font-family: 'Lato', sans-serif; font-size: 26px; font-weight: 900; fill: #ffffff; letter-spacing: -0.5px; }
+      .subtitle { font-family: 'Open Sans', sans-serif; font-size: 13px; fill: #94a3b8; }
+      .layer-label { font-family: 'Lato', sans-serif; font-size: 14px; font-weight: 700; fill: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px; }
+      .box-title { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 700; fill: #f8fafc; }
+      .box-desc { font-family: 'Open Sans', sans-serif; font-size: 11.5px; fill: #cbd5e1; }
+      .tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; }
+      .metric-tag { font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 700; fill: #10b981; }
+    </style>
+    
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090e1a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#151e36"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#06b6d4" flood-opacity="0.25"/>
+    </filter>
+
+    <filter id="glowEmerald" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#10b981" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(40, 45)">
+    <circle cx="16" cy="16" r="16" fill="#06b6d4" fill-opacity="0.2"/>
+    <path d="M11 16 L15 20 L21 12" stroke="#38bdf8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <text x="44" y="16" class="title">MODUS ZEN OS · 6-LAYER SOVEREIGN ARCHITECTURE</text>
+    <text x="44" y="34" class="subtitle">Distributed Agentic Operating System Kernel · Erlang OTP Actor Supervision · Zanzibar ReBAC · Zero-Token Bus</text>
+  </g>
+
+  <!-- Performance Badges in Top Right -->
+  <g transform="translate(740, 35)">
+    <rect width="220" height="32" rx="16" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="5" fill="#34d399"/>
+    <text x="28" y="20" class="metric-tag">68/68 VECTORS DEFEATED · 0 TOKENS</text>
+  </g>
+
+  <!-- LAYER 1: FORTIFIED INGESTION & C2 -->
+  <g transform="translate(40, 100)">
+    <rect width="920" height="78" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" filter="url(#glowCyan)"/>
+    <rect x="0" y="0" width="6" height="78" rx="3" fill="#38bdf8"/>
+    <text x="24" y="24" class="layer-label">Layer 1: Fortified Multi-Channel Ingestion &amp; C2 Gate</text>
+    <text x="24" y="46" class="box-title">Cryptographic Ingestion Mesh (Telegram, WhatsApp, Signal, Ntfy, Web, Voice, ACP)</text>
+    <text x="24" y="64" class="box-desc">HMAC-SHA256 signature verification · Out-of-band 6-digit OTP challenges · Strict 2-person dual-custody quorum for critical mutations</text>
+    <rect x="790" y="14" width="115" height="22" rx="11" fill="#0369a1" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1"/>
+    <text x="802" y="29" fill="#38bdf8" class="tag">Dual-Custody 2FA</text>
+  </g>
+
+  <!-- LAYER 2: TOKENSHIELD ZERO-COST SEAM -->
+  <g transform="translate(40, 190)">
+    <rect width="920" height="78" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+    <rect x="0" y="0" width="6" height="78" rx="3" fill="#818cf8"/>
+    <text x="24" y="24" class="layer-label" fill="#818cf8">Layer 2: TokenShield &amp; Zero-Token Security Seam</text>
+    <text x="24" y="46" class="box-title">Deterministic AST Sanitization &amp; Evasion Neutralizer (0 Wire Tokens)</text>
+    <text x="24" y="64" class="box-desc">Unicode NFKC normalization · Zero-width space (\u200B) stripping · Cyrillic homoglyph folding · Trojan Source Bidi directionality reversal detection</text>
+    <rect x="790" y="14" width="115" height="22" rx="11" fill="#4338ca" fill-opacity="0.3" stroke="#818cf8" stroke-width="1"/>
+    <text x="804" y="29" fill="#a5b4fc" class="tag">0 LLM Tokens</text>
+  </g>
+
+  <!-- LAYER 3: KERNEL REBAC & FINOPS -->
+  <g transform="translate(40, 280)">
+    <rect width="920" height="78" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" filter="url(#glowEmerald)"/>
+    <rect x="0" y="0" width="6" height="78" rx="3" fill="#10b981"/>
+    <text x="24" y="24" class="layer-label" fill="#10b981">Layer 3: Google Zanzibar ReBAC &amp; Pre-Dispatch FinOps</text>
+    <text x="24" y="46" class="box-title">Kernel-Grade Relationship Tuples &amp; Step 5 Spend Kill Switch</text>
+    <text x="24" y="64" class="box-desc">5-level monotonic capability attenuation · Ed25519 model card verification · Asymmetric T-DoS clamp (R_amp=0.0) · Hard spend cap enforcement (0 overdraft)</text>
+    <rect x="790" y="14" width="115" height="22" rx="11" fill="#065f46" fill-opacity="0.3" stroke="#10b981" stroke-width="1"/>
+    <text x="808" y="29" fill="#34d399" class="tag">Zanzibar ACL</text>
+  </g>
+
+  <!-- LAYER 4: LINDA TUPLE SPACE & EPHEMERAL BUS -->
+  <g transform="translate(40, 370)">
+    <rect width="920" height="78" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+    <rect x="0" y="0" width="6" height="78" rx="3" fill="#f59e0b"/>
+    <text x="24" y="24" class="layer-label" fill="#f59e0b">Layer 4: Linda Tuple Space &amp; Zero-Token Delta Bus</text>
+    <text x="24" y="46" class="box-title">Decoupled Generative Coordination (O(1) Memory vs O(N²) Chat)</text>
+    <text x="24" y="64" class="box-desc">Generative out() / in_lease() topic routing · SQLite WAL state delta patching (modus_memory.db) · Virtual epoch clock-warping reclamation</text>
+    <rect x="790" y="14" width="115" height="22" rx="11" fill="#78350f" fill-opacity="0.3" stroke="#f59e0b" stroke-width="1"/>
+    <text x="814" y="29" fill="#fbbf24" class="tag">Linear O(N)</text>
+  </g>
+
+  <!-- LAYER 5: ERLANG OTP SUPERVISOR & JIT RAM-DISK -->
+  <g transform="translate(40, 460)">
+    <rect width="920" height="78" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+    <rect x="0" y="0" width="6" height="78" rx="3" fill="#ec4899"/>
+    <text x="24" y="24" class="layer-label" fill="#ec4899">Layer 5: Erlang OTP Supervisor &amp; 22-Sector JIT RAM-Disk</text>
+    <text x="24" y="46" class="box-title">Self-Healing Fault Trees &amp; 0.005ms Ephemeral Tool Staging</text>
+    <text x="24" y="64" class="box-desc">ONE_FOR_ONE / REST_FOR_ONE actor tree · Crash dampening circuit breaker (&gt;3 restarts in 10s halts branch) · 3GB LRU RAM-disk staging without Docker boot</text>
+    <rect x="790" y="14" width="115" height="22" rx="11" fill="#831843" fill-opacity="0.3" stroke="#ec4899" stroke-width="1"/>
+    <text x="812" y="29" fill="#f472b6" class="tag">OTP Failover</text>
+  </g>
+
+  <!-- LAYER 6: THYMOS AFFECTIVE & NUMA MESH -->
+  <g transform="translate(40, 550)">
+    <rect width="920" height="78" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+    <rect x="0" y="0" width="6" height="78" rx="3" fill="#14b8a6"/>
+    <text x="24" y="24" class="layer-label" fill="#14b8a6">Layer 6: THYMOS Affective Engine &amp; Sovereign Hardware</text>
+    <text x="24" y="46" class="box-title">Pre-Deadlock Somatic Marker Healing &amp; NUMA-Isolated Air-Gap Mesh</text>
+    <text x="24" y="64" class="box-desc">Arousal/Dominance appraisal tracking (A&gt;0.85, D&lt;-0.5 deadlock relief) · TimesFM 3-tier forecasting · NUMA Node-1 local inference mesh (zero cloud egress)</text>
+    <rect x="790" y="14" width="115" height="22" rx="11" fill="#134e4a" fill-opacity="0.3" stroke="#14b8a6" stroke-width="1"/>
+    <text x="812" y="29" fill="#2dd4bf" class="tag">Sovereign Mesh</text>
+  </g>
+
+  <!-- Footer Watermark -->
+  <g transform="translate(40, 660)">
+    <text x="0" y="16" class="box-desc" fill="#64748b">Modus Zen OS v1.0 Enterprise · Certified Zero-Symlink Invariant · BSL 1.1 Commercial Software License</text>
+    <text x="920" y="16" class="box-desc" fill="#64748b" text-anchor="end">fleet_audit_engine 24/24 PASS · adversarial_wave1-7 68/68 PASS</text>
+  </g>
+</svg>
